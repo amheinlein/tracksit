@@ -1,8 +1,24 @@
-# Welcome to your Expo app 👋
+# Tracksit 📦
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Tracksit is a lightweight inventory tracking app built with Expo that helps you log items, categorize them, and keep tabs on where everything lives. It is designed for quick data entry and flexible filtering so you can stay on top of your gear, supplies, or collectibles.
 
-## Get started
+## Features
+
+- Item management with create, update, and archive flows
+- Location and category tagging for every item
+- Quick search and filter tools for faster lookups
+- Configurable option lists for categories, locations, and statuses
+- Responsive UI tuned for both mobile and tablet layouts
+
+## Architecture & Tooling
+
+- Expo + React Native powered by `expo-router` for file-based navigation
+- Context-based state management via custom providers in `app/context`
+- Component-driven UI with reusable building blocks in `app/components`
+- TypeScript for type safety and predictable data models
+- React Hook Form and Zod validation for robust form handling
+
+## Getting Started
 
 1. Install dependencies
 
@@ -10,41 +26,23 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install
    ```
 
-2. Start the app
+2. Start the development server
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Open the project using Expo Go, an emulator, or a development build as prompted.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Layout
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- `app/` – screens, routes, and UI components
+- `app/context/` – contexts, reducers, and initial data
+- `app/components/` – shared visual components and form controls
+- `app/tabs/` – tab-based routing views for managing and browsing items
 
-## Get a fresh project
+## Further Reading
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo documentation](https://docs.expo.dev/)
+- [Expo Router guide](https://docs.expo.dev/router/introduction/)
+- [React Native docs](https://reactnative.dev/docs/getting-started)
